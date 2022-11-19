@@ -1,0 +1,153 @@
+.parent{
+    display: grid;
+    row-gap: 50px;
+}
+.yt{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+   
+}
+@media (max-width: 800px){
+    .yt{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+/* @media (min-width: 1200px){
+    .yt{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+} */
+@media (man-width: 801px) and (max-width:1199px){
+    .yt{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+
+
+
+.foto_radius{
+    border-radius: 50px;
+    width:39px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    }
+.pub_details{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-top: 10px;
+ 
+
+}
+.thumb{
+    width: 100%;
+}
+.p1{
+    
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.p2{
+    color:gray;
+}
+.p3{
+    color:gray;}
+/* }
+.parentflex{
+    display: flex;
+    
+} */
+body{
+    padding-top: 80px;
+    height: 3000px;
+    padding-left: 100px;
+}
+.video-time-stamp{
+    position: absolute;
+    right:8px;
+    bottom:10px;
+    background-color: rgb(3, 3, 3);
+    color:white;
+    font-family: roboto;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+.thumbnail{
+    position: relative;
+}
+
+.vid_details{
+    display: grid;
+    pointer-events: none;
+    grid-template-rows:2fr 1fr 1fr;
+    
+}
+/* .chan_pic{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+} */
+.newtest:hover .chan_pichover{
+    opacity: 1;
+}
+.newtest{
+    position: relative;
+    display: inline-block;
+}
+.chan_pichover{
+    position:absolute;
+    width:250px;
+    height: 70px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    opacity: 0;
+    box-shadow: 1px 1px 3px rgb(174, 171, 171);
+    border-radius: 5px;
+    background-color: white;
+    z-index: 1;
+    bottom:-110px;
+    pointer-events:none;
+    transition: opacity 0.15s;
+}
+
+.foto_radius2{
+    border-radius:100px;
+    height: 60px;
+    width:60px;
+}
+.chan_para1{
+    font-family: roboto;
+    
+    font-weight: 700;
+    font-size: 18px;
+
+}
+.chan_para2{
+    font-family: roboto;
+font-size: 15px;
+color:rgb(96, 91, 91);
+}
+.paras{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.noti_expand{
+    border: 1px solid red;
+    height: 200px;
+    width: 400px;
+    color: lavender;
+    font-size: 20px;
+    
+}

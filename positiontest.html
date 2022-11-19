@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <style>
+            .yt_video{
+                width:300px;
+                display: grid;
+                grid-template-rows: 2fr 1fr;
+            }
+            .thumbnail{
+                display: grid;
+            }
+            .publisher{
+                display: grid;
+                grid-template-columns:1fr 3fr ;
+            }
+            .videodetails{
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr;
+            }
+            .body{
+                margin: 0px;
+            }
+            .testing{
+
+                position: relative;
+                display: inline-block;
+                cursor: pointer;
+              
+            }
+         
+            .hoverrr{
+                position:absolute;
+                width:200px;
+                background-color: white;
+                box-shadow: 1px 1px 8px lightgray;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                opacity: 0;
+                top:50px;
+                pointer-events: none;
+            }
+            /* .hoverrr:hover{
+                opacity: 1;
+            } */
+            .testing:hover .hoverrr{
+                opacity: 1;
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <div class="'yt_video">
+            <div class="thumbnail">
+                <img class="thumb" src="thumbnails/thumbnail-1.webp">     
+            </div>
+            <div class="publisher">
+                <div class="channelpic">
+                    <div class="testing"><img class="pic" src="channel_pics/channel-1.jpeg">    <div class="hoverrr"><img class="pic" src="channel_pics/channel-1.jpeg"><div class="text">
+                        <div class="p1">marques brownlee</div><div class="p2">15M subscribers</div>                    </div>
+                </div></div>
+                
+                </div>
+                <div class="videodetails">
+                    <div>
+                        Talking tech with sundar pichai
+                    </div>
+                   <div>
+                        Marques brownlee
+                    </div>
+                    <div>
+                        10M views . 5 years ago
+                    </div>
+                </div>
+            </div>
+            </div>
+            </body>
+</html> 
